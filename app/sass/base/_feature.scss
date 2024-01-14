@@ -1,0 +1,33 @@
+#featureSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    margin-top: 100px;
+
+    img {
+        width: 40%;
+    }
+
+    #featureContentSection {
+        #featureContent {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transition for box-shadow and transform */
+        
+            &:hover {
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+                transform: scale(1.05); 
+                cursor: pointer;
+            }
+        
+            img {
+                width: 100px;
+            }
+        }
+    }
+}
